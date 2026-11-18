@@ -1,0 +1,26 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:p0": "playwright test --grep @p0",
+    "test:p1": "playwright test --grep @p1",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:security": "playwright test --grep @security",
+    "test:a11y": "playwright test --grep @accessibility",
+    "test:responsive": "playwright test --grep @responsive",
+    "test:performance": "playwright test --grep @performance",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3"
+  }
+}
